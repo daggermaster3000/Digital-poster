@@ -11,11 +11,22 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Investigating body axis straightening in zebrafish" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          ...
         </p>
+        <img
+        src="/zfishtest4.png" 
+        alt="GIF"
+        style={{ maxWidth: '50%', height: 'auto' }}
+      />
       </main>
+      <div className="container">
+      <h1>What is a kymograph?</h1>
+      <p className="description">This is the first paragraph. Add your content here.</p>
+
+      
+    </div>
 
       <Footer />
     </div>
