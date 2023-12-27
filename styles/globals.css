@@ -26,10 +26,28 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
+
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1, h2, h3, p {
+    text-align: center;
+  }
+
+  .gif-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .container {
+      padding: 10px;
+    }
+  }
