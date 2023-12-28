@@ -56,9 +56,9 @@ const Index = () => {
     
         <img
           src="output.gif"
-          alt="Flow Example GIF"
+          alt="zebrafish cc"
           style={{
-            maxWidth: '70%',
+            maxWidth: '95%',
             height: 'auto',
             borderRadius: '10px', // Add rounded edges
             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' // Add box-shadow for a modern frame effect

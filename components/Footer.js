@@ -7,7 +7,7 @@ export default function Footer() {
       <img
           src="uni_logo.png"
           alt="UZH"
-          style={{ maxWidth: '30%', height: 'auto' , marginTop: '50px'}}
+          style={{ maxWidth: '40%', height: 'auto' , marginTop: '50px' }}
         />
       </footer>
     </>
