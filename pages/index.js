@@ -64,7 +64,7 @@ const Index = () => {
         </p>
 
         <img
-          src="flow_example.gif"
+          src="output.gif"
           alt="Flow Example GIF"
           style={{ maxWidth: '70%', height: 'auto' }}
         />
