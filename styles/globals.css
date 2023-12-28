@@ -9,7 +9,9 @@ body {
 * {
   box-sizing: border-box;
 }
-
+p{
+  text-align:justify;
+}
 main {
   padding: 1rem 0;
   flex: 1;
@@ -27,7 +29,9 @@ code {
 }
 
 
-
+.description{
+  text-align:justify;
+}
 
   .container {
     max-width: 600px;
@@ -50,4 +54,40 @@ code {
     .container {
       padding: 10px;
     }
+  }
+
+  .toc-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .toc-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px; /* Space for the dot */
+  }
+
+  .toc-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .toc-list a:hover {
+    color: #0070f3; /* Change the color on hover */
+  }
+
+  .toc-container {
+    background-color: #f8f9fa; /* Background color */
+    border: 1px solid #dee2e6; /* Border color */
+    border-radius: 8px; /* Border radius for rounded corners */
+    padding: 16px; /* Padding inside the border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth effect */
+  }
+  .toc-list li::before {
+    content: '➡️'; /* Unicode character for a dot */
+    position: absolute;
+    left: 0;
+    color: #0070f3; /* Dot color */
   }
