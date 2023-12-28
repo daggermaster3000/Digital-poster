@@ -53,10 +53,17 @@ const Index = () => {
         <br></br>
         <h2 id="section1">The Central Canal</h2>
 
-        <video autoPlay muted loop playsInline width="100%" height="auto">
-          <source src="/overview.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+    
+        <img
+          src="output.gif"
+          alt="Flow Example GIF"
+          style={{
+            maxWidth: '70%',
+            height: 'auto',
+            borderRadius: '10px', // Add rounded edges
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' // Add box-shadow for a modern frame effect
+          }}
+        />
 
         <h2 id="section2">CSF Flow in the Central Canal</h2>
         <p className="description">
@@ -64,7 +71,7 @@ const Index = () => {
         </p>
 
         <img
-          src="output.gif"
+          src="flow_example.gif"
           alt="Flow Example GIF"
           style={{ maxWidth: '70%', height: 'auto' }}
         />
