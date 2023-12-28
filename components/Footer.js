@@ -9,6 +9,7 @@ export default function Footer() {
           alt="UZH"
           style={{ maxWidth: '40%', height: 'auto' , marginTop: '50px' }}
         />
+        
       </footer>
     </>
   )
