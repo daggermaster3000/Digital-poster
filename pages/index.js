@@ -1,3 +1,4 @@
+// components/VideoPlayer.js
 import Head from 'next/head';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
@@ -5,17 +6,17 @@ import React, { useEffect } from 'react';
 
 const Index = () => {
   useEffect(() => {
-    const h1Elements = document.querySelectorAll('h2');
+    const h2Elements = document.querySelectorAll('h2');
 
-    if (h1Elements.length > 0) {
+    if (h2Elements.length > 0) {
       const tocList = document.createElement('ul');
       tocList.className = 'toc-list';
 
-      h1Elements.forEach((h1, index) => {
+      h2Elements.forEach((h2, index) => {
         const listItem = document.createElement('li');
         const link = document.createElement('a');
         link.href = `#section${index + 1}`;
-        link.textContent = h1.textContent;
+        link.textContent = h2.textContent;
 
         // Smooth scroll to the corresponding section
         link.addEventListener('click', (event) => {
@@ -35,8 +36,6 @@ const Index = () => {
       // Append the table of contents to its container
       const tocContainer = document.getElementById('tableOfContents');
       tocContainer.appendChild(tocList);
-
-
     }
   }, []); // Empty dependency array ensures useEffect runs only once after initial render
 
@@ -50,15 +49,14 @@ const Index = () => {
       <Header title="Investigating body axis straightening in zebrafish 🐟" />
 
       <main>
-
         <div id="tableOfContents" className="toc-container"></div>
         <br></br>
         <h2 id="section1">The Central Canal</h2>
 
-        <video autoPlay muted loop width="100%" height="auto">
-      <source src="/overview.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+        <video autoPlay muted loop playsInline width="100%" height="auto">
+          <source src="/overview.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
         <h2 id="section2">CSF Flow in the Central Canal</h2>
         <p className="description">
@@ -67,7 +65,7 @@ const Index = () => {
 
         <img
           src="flow_example.gif"
-          alt="GIF"
+          alt="Flow Example GIF"
           style={{ maxWidth: '70%', height: 'auto' }}
         />
 
