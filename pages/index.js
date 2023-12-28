@@ -54,6 +54,12 @@ const Index = () => {
         <div id="tableOfContents" className="toc-container"></div>
         <br></br>
         <h2 id="section1">The Central Canal</h2>
+
+        <video autoPlay muted loop width="100%" height="auto">
+      <source src="/overview.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
         <h2 id="section2">CSF Flow in the Central Canal</h2>
         <p className="description">
           CSF in the central canal has a bilateral flow profile. It flows towards the tail ventrally, and towards the head dorsally.
