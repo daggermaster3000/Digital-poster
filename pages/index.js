@@ -2,6 +2,9 @@
 import Head from 'next/head';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
+import ProgressBar from '@components/ScrollProgressBar'; // Check the import path
+
+
 import React, { useEffect } from 'react';
 
 const Index = () => {
@@ -40,12 +43,15 @@ const Index = () => {
   }, []); // Empty dependency array ensures useEffect runs only once after initial render
 
   return (
+    
     <div className="container">
+      <ProgressBar  />
+    <div className='containerin'>
       <Head>
         <title>Digital Poster Bachmann Lab 🐟</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
       <Header title="Investigating body axis straightening in zebrafish 🐟" />
 
       <main>
@@ -79,8 +85,10 @@ const Index = () => {
         <h2 id="section3">What is a kymograph?</h2>
         <p className="description">This is the first paragraph. Add your content here.</p>
       </main>
-
+      
       <Footer />
+      </div>
+
     </div>
   );
 };

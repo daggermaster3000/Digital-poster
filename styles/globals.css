@@ -44,6 +44,12 @@ code {
 }
 
   .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  .containerin {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
