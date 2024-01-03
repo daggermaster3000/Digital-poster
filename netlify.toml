@@ -1,6 +1,7 @@
 [build]
-  command = "npm install --force && npm run build"
+  command = "npm run build"
   publish = ".next"
+  environment = { NETLIFY_BUILD_FLAGS = "--force" }
 
 
   
