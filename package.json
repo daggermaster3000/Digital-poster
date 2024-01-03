@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "install": "npm install --force"
+    "export": "next export"
+   
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
