@@ -47,7 +47,19 @@ const Index = () => {
   }, []); // Empty dependency array ensures useEffect runs only once after initial render
 
   return (
+    
     <div className={`container ${isNightMode ? 'night-mode' : ''}`}>
+      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9CJ2T6TND1"></script>
+<script>
+{`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9CJ2T6TND1');
+  `}
+</script>
       <ProgressBar />
       <div className='containerin'>
         <Head>
