@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-      <a href="https://www.mls.uzh.ch/en/research/bachmann/research.html" >
+      <a href="https://www.mls.uzh.ch/en/research/bachmann/research.html"  style={{marginLeft: "0px"}}>
       <img
           src="uni_logo.png"
           alt="UZH"
-          style={{ maxWidth: '40%', height: 'auto' , marginTop: '50px' }}
+          style={{ maxWidth: '40%', height: 'auto'  }}
           
         />
         </a>
@@ -16,11 +16,20 @@ export default function Footer() {
       <img
           src="linkedin.png"
           alt="UZH"
-          style={{ maxWidth: '50%', height: 'auto' , marginTop: '50px' }}
+          style={{ maxWidth: '50%', height: 'auto'  }}
+          
+        />
+        </a>
+        <a href="https://github.com/daggermaster3000/CerebroFlow" >
+      <img
+          src="github-mark.png"
+          alt="github"
+          style={{ maxWidth: '100%', height: 'auto'  }}
           
         />
         </a>
       </footer>
+      
     </>
   )
 }

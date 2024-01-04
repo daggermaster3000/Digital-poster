@@ -143,7 +143,7 @@ const Index = () => {
             that represents the trajectory of a particle in the rostro-caudal plane over time for every dorso-ventral position.
             For each of these kymographs we perform blob detection and from each blob's orientation angle, we can extract the particle's velocity.
             Although we only detect velocity along one axis, and one same bead may be detected multiple times, this method still gives us valuable insight
-            on CSF flow dynamics.
+            on CSF flow dynamics. This whole analysis process was implemented in python and the code can be found <a href='https://github.com/daggermaster3000/CerebroFlow'>here</a>.
           </p>
           </Fade>
         </main>
