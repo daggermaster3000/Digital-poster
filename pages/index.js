@@ -49,7 +49,7 @@ const Index = () => {
   return (
     
     <div className={`container ${isNightMode ? 'night-mode' : ''}`}>
-    
+ {/*     
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CJ2T6TND1"></script>
 <script>
 {`
@@ -59,7 +59,7 @@ const Index = () => {
 
   gtag('config', 'G-9CJ2T6TND1');
   `}
-</script>
+</script>*/}
       <ProgressBar />
       <div className='containerin'>
         <Head>
@@ -139,7 +139,7 @@ const Index = () => {
             <Fade left>
             <p className='description'>
             To generate a kymograph, the time axis of our time lapse is
-            exchanged with the dorsal-ventral axis (or the x-axis in image processing convetions). This gives us an array of kymographs,
+            exchanged with the dorsal-ventral axis. This gives us an array of kymographs,
             that represents the trajectory of a particle in the rostro-caudal plane over time for every dorso-ventral position.
             For each of these kymographs we perform blob detection and from each blob's orientation angle, we can extract the particle's velocity.
             Although we only detect velocity along one axis, and one same bead may be detected multiple times, this method still gives us valuable insight
