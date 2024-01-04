@@ -49,7 +49,7 @@ const Index = () => {
   return (
     
     <div className={`container ${isNightMode ? 'night-mode' : ''}`}>
-    
+     
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CJ2T6TND1"></script>
 <script>
 {`
