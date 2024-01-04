@@ -112,10 +112,14 @@ code {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth effect */
   }
   .toc-list li::before {
-    content: '➡️'; /* Unicode character for a dot */
+    content: '•'; /* Unicode character for a dot */
     position: absolute;
     left: 0;
-    color: #0070f3; /* Dot color */
+    
+    
+  }
+  .toc-list li:hover {
+    color: #0070f3; /* Change the color on hover */
   }
 
   .image-description {
