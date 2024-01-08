@@ -84,8 +84,17 @@ const Index = () => {
           </p>
           </Fade>
           <Fade left>
-          <img
-            src="output.gif"
+          <video autoPlay loop muted playsInline controls={false} width="100%"             style={{
+              maxWidth: '95%',
+              height: 'auto',
+              borderRadius: '10px', // Add rounded edges
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add box-shadow for a modern frame effect
+            }}>
+  <source src="loop_zfish.mp4" type="video/mp4"></source>
+  Your browser does not support the video tag.
+</video>
+          {/*  <img
+            src="loop_zfish.mp4"
             alt="zebrafish cc"
             style={{
               maxWidth: '95%',
@@ -93,7 +102,7 @@ const Index = () => {
               borderRadius: '10px', // Add rounded edges
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add box-shadow for a modern frame effect
             }}
-          />
+          />*/}
           </Fade>
           <br></br><br></br>
  
