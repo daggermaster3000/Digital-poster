@@ -23,7 +23,7 @@ const Index = () => {
       const newWidth = 100 - scrollPosition/3;
 
       // Set the new width to the div
-      changingDiv.style.width = `${newWidth}%`;
+      changingDiv.style.width = `${newWidth}vw`;
     };
 
     // Attach the handleScroll function to the scroll event
