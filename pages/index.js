@@ -13,6 +13,30 @@ const Index = () => {
   };
 
   useEffect(() => {
+    const changingDiv = document.querySelector('.box');
+
+    // Function to handle scroll events
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      // Calculate the new width based on the scroll position
+      const newWidth = 100 - scrollPosition/3;
+
+      // Set the new width to the div
+      changingDiv.style.width = `${newWidth}%`;
+    };
+
+    // Attach the handleScroll function to the scroll event
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup: remove event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array ensures the effect runs only once on mount
+
+
+  useEffect(() => {
     const h2Elements = document.querySelectorAll('h2');
 
     if (h2Elements.length > 0) {
@@ -61,6 +85,7 @@ const Index = () => {
   `}
 </script>*/}
       <ProgressBar />
+      
       <div className='containerin'>
         <Head>
           <title>Digital Poster Bachmann Lab 🐟</title>
@@ -69,10 +94,14 @@ const Index = () => {
         </Head>
 
         <Header title="Investigating body axis straightening in zebrafish 🐟" />
-
+        
         <main>
           <div id="tableOfContents" className="toc-container"></div>
-          <br></br><br></br>
+          <br></br>
+          <div class="wave-container">
+        <div class="box"></div>
+        <div class="wave"></div>
+        </div>
           <h2 id="section1">The Central Canal</h2>
           <Fade left>
           <p className="description">
@@ -94,7 +123,9 @@ const Index = () => {
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add box-shadow for a modern frame effect
             }}
           />
+          
           </Fade>
+          
           <br></br><br></br>
  
           <h2 id="section2">CSF Flow in the Central Canal</h2>
@@ -113,6 +144,7 @@ const Index = () => {
           />
           </Fade>
           <br></br><br></br>
+          <hr></hr>
           <h2 id="section3">What is a kymograph?</h2>
           <Fade left>
           <p className="description">
@@ -147,7 +179,7 @@ const Index = () => {
           </p>
           </Fade>
         </main>
-
+        
         <Footer />
         {/* <div className="toggle-container">
         <span role="img" aria-label="moon" className="sun-icon">☀️ </span>

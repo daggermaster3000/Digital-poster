@@ -223,3 +223,37 @@ input:checked + .slider:before {
 .sun-icon {
   margin-right: 6px;
 }
+
+       /* Custom styling for the horizontal line */
+       hr {
+        color: #333; /* Line color */
+        background-color: #333; /* Background color (if visible) */
+        height: 20px; /* Line thickness */
+        border: none; /* Remove default border */
+        margin: 20px 0; /* Margin above and below the line */
+    }
+
+    .wave {
+      z-index: 1;
+      display: block;
+      width: 100vw;
+      height: 200px;
+      background-color: #000000;
+
+      --mask:
+      radial-gradient(56.84px at 50% calc(100% + 46.50px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 60px) calc(50% - 16.5px + .5px)/120px 33px repeat-x,
+      radial-gradient(56.84px at 50% -46.5px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 16.5px)/120px 33px repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+    }
+  
+    .box {
+      position: absolute;
+      z-index: 10;
+      display: block;
+     
+      width:100%;
+      height: 200px;
+      box-sizing: border-box; /* Include padding and border in total width/height */
+      background-color: #fafafa;
+    }
