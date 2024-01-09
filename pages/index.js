@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
 import ProgressBar from '@components/ScrollProgressBar';
+import ViewCounter from '@components/ViewCounter';
 import Fade from 'react-reveal/Fade'
 
 const Index = () => {
@@ -12,6 +13,7 @@ const Index = () => {
     setNightMode((prevMode) => !prevMode);
   };
 
+  //stuff for the wave
   useEffect(() => {
     const changingDiv = document.querySelector('.box');
 
@@ -105,7 +107,7 @@ const Index = () => {
           <h2 id="section1">The Central Canal</h2>
           <Fade left>
           <p className="description">
-            The central canal runs through the spinal cord and is filled with CSF, effectively transporting nutients throughout the spinal cord.
+            The central canal runs through the spinal cord and is filled with CSF, effectively transporting nutrients throughout the spinal cord.
             It is connected to the ventricular system, and is lined with <b>ependymal radial glial cells</b> (ERGs)
             and <b>CSF contacting neurons</b> (CSF-cNs). The ERGs apical extension bears a motile cilium, which is believed to
             be responsible for the motion of CSF inside the canal. CSF-cNs also posses a cilium, believed to monitor certain parameters of the CSF, such as
@@ -187,7 +189,7 @@ const Index = () => {
           </p>
           </Fade>
         </main>
-        
+       
         <Footer />
         {/* <div className="toggle-container">
         <span role="img" aria-label="moon" className="sun-icon">☀️ </span>
